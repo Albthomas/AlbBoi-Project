@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.5.2">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="no" active="no"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="no" active="no"/>
+<layer number="8" name="Route8" color="27" fill="1" visible="no" active="no"/>
+<layer number="9" name="Route9" color="28" fill="1" visible="no" active="no"/>
+<layer number="10" name="Route10" color="29" fill="1" visible="no" active="no"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="no" active="no"/>
+<layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
+<layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
+<layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
+<layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
+<layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
+<layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+</layers>
+<board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyZDc1MTI1" projecturn="a.cGVyc29uYWw6dWUyZDc1MTI1IzIwMTgxMDExMTU0MDUzNjc2" f3durn="urn:adsk.wipprod:dm.lineage:zDQ_ekDARhuq6QIWD7PjTw" pcbguid="b219e74d-1e80-4b6d-b2dc-d3eedd79aa98" lastpulledtime="" lastsyncedchangeguid="5d49fa71-5186-05cc-fe47-8e486823593a"/>
+<plain>
+<wire x1="17.78" y1="19.05" x2="119.36" y2="19.05" width="0" layer="20"/>
+<wire x1="119.36" y1="19.05" x2="119.36" y2="100" width="0" layer="20"/>
+<wire x1="119.36" y1="100" x2="17.78" y2="100" width="0" layer="20"/>
+<wire x1="17.78" y1="100" x2="17.78" y2="19.05" width="0" layer="20"/>
+</plain>
+<libraries>
+<library name="SML-D12U1WT86">
+<packages>
+<package name="LED_SML-D12Y1WT86">
+<text x="-2.5" y="1" size="1.016" layer="25">&gt;NAME</text>
+<text x="-2.5" y="-2" size="1.016" layer="27">&gt;VALUE</text>
+<wire x1="0.85" y1="0.45" x2="-0.85" y2="0.45" width="0.127" layer="51"/>
+<wire x1="-0.85" y1="0.45" x2="-0.85" y2="-0.45" width="0.127" layer="51"/>
+<wire x1="-0.85" y1="-0.45" x2="0.85" y2="-0.45" width="0.127" layer="51"/>
+<wire x1="0.85" y1="-0.45" x2="0.85" y2="0.45" width="0.127" layer="51"/>
+<wire x1="1.475" y1="0.7" x2="-1.475" y2="0.7" width="0.05" layer="39"/>
+<wire x1="-1.475" y1="0.7" x2="-1.475" y2="-0.7" width="0.05" layer="39"/>
+<wire x1="-1.475" y1="-0.7" x2="1.475" y2="-0.7" width="0.05" layer="39"/>
+<wire x1="1.475" y1="-0.7" x2="1.475" y2="0.7" width="0.05" layer="39"/>
+<circle x="-1.765" y="0" radius="0.1" width="0.2" layer="21"/>
+<circle x="-1.765" y="0" radius="0.1" width="0.2" layer="51"/>
+<wire x1="-0.11" y1="0.45" x2="0.11" y2="0.45" width="0.127" layer="21"/>
+<wire x1="-0.11" y1="-0.45" x2="0.11" y2="-0.45" width="0.127" layer="21"/>
+<smd name="C" x="-0.825" y="0" dx="0.8" dy="0.8" layer="1"/>
+<smd name="A" x="0.825" y="0" dx="0.8" dy="0.8" layer="1"/>
+</package>
+</packages>
+</library>
+<library name="ESE 323 Custom Library">
+<packages>
+<package name="CONN_00010C4LF_AMP">
+<smd name="1" x="-2.54" y="-1.95" dx="0.762" dy="2.3876" layer="1"/>
+<smd name="2" x="-2.54" y="1.95" dx="0.762" dy="2.3876" layer="1"/>
+<smd name="3" x="-1.27" y="-1.95" dx="0.762" dy="2.3876" layer="1"/>
+<smd name="4" x="-1.27" y="1.95" dx="0.762" dy="2.3876" layer="1"/>
+<smd name="5" x="0" y="-1.95" dx="0.762" dy="2.3876" layer="1"/>
+<smd name="6" x="0" y="1.95" dx="0.762" dy="2.3876" layer="1"/>
+<smd name="7" x="1.27" y="-1.95" dx="0.762" dy="2.3876" layer="1"/>
+<smd name="8" x="1.27" y="1.95" dx="0.762" dy="2.3876" layer="1"/>
+<smd name="9" x="2.54" y="-1.95" dx="0.762" dy="2.3876" layer="1"/>
+<smd name="10" x="2.54" y="1.95" dx="0.762" dy="2.3876" layer="1"/>
+<wire x1="3.302" y1="-1.8288" x2="3.302" y2="1.8288" width="0.1524" layer="21"/>
+<wire x1="-3.302" y1="1.8288" x2="-3.302" y2="-1.8288" width="0.1524" layer="21"/>
+<wire x1="-3.556" y1="-1.9558" x2="-4.318" y2="-1.9558" width="0.508" layer="21" curve="-180"/>
+<wire x1="-4.318" y1="-1.9558" x2="-3.556" y2="-1.9558" width="0.508" layer="21" curve="-180"/>
+<text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
+<wire x1="-3.175" y1="-1.7018" x2="3.175" y2="-1.7018" width="0.1524" layer="51"/>
+<wire x1="3.175" y1="-1.7018" x2="3.175" y2="1.7018" width="0.1524" layer="51"/>
+<wire x1="3.175" y1="1.7018" x2="-3.175" y2="1.7018" width="0.1524" layer="51"/>
+<wire x1="-3.175" y1="1.7018" x2="-3.175" y2="-1.7018" width="0.1524" layer="51"/>
+<wire x1="-2.159" y1="-3.8608" x2="-2.921" y2="-3.8608" width="0.508" layer="51" curve="-180"/>
+<wire x1="-2.921" y1="-3.8608" x2="-2.159" y2="-3.8608" width="0.508" layer="51" curve="-180"/>
+<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+</package>
+<package name="CONN_SBH11-NBPC-D10-SM-BK">
+<pad name="1" x="-11.43" y="1.27" drill="0.9652" diameter="1.524"/>
+<pad name="2" x="-11.43" y="-1.27" drill="0.9652" diameter="1.524"/>
+<pad name="3" x="-8.89" y="1.27" drill="0.9652" diameter="1.524"/>
+<pad name="4" x="-8.89" y="-1.27" drill="0.9652" diameter="1.524"/>
+<pad name="5" x="-6.35" y="1.27" drill="0.9652" diameter="1.524"/>
+<pad name="6" x="-6.35" y="-1.27" drill="0.9652" diameter="1.524"/>
+<pad name="7" x="-3.81" y="1.27" drill="0.9652" diameter="1.524"/>
+<pad name="8" x="-3.81" y="-1.27" drill="0.9652" diameter="1.524"/>
+<pad name="9" x="-1.27" y="1.27" drill="0.9652" diameter="1.524"/>
+<pad name="10" x="-1.27" y="-1.27" drill="0.9652" diameter="1.524"/>
+<pad name="11" x="1.27" y="1.27" drill="0.9652" diameter="1.524"/>
+<pad name="12" x="1.27" y="-1.27" drill="0.9652" diameter="1.524"/>
+<pad name="13" x="3.81" y="1.27" drill="0.9652" diameter="1.524"/>
+<pad name="14" x="3.81" y="-1.27" drill="0.9652" diameter="1.524"/>
+<pad name="15" x="6.35" y="1.27" drill="0.9652" diameter="1.524"/>
+<pad name="16" x="6.35" y="-1.27" drill="0.9652" diameter="1.524"/>
+<pad name="17" x="8.89" y="1.27" drill="0.9652" diameter="1.524"/>
+<pad name="18" x="8.89" y="-1.27" drill="0.9652" diameter="1.524"/>
+<pad name="19" x="11.43" y="1.27" drill="0.9652" diameter="1.524"/>
+<pad name="20" x="11.43" y="-1.27" drill="0.9652" diameter="1.524"/>
+<wire x1="-16.6624" y1="-4.5212" x2="16.6624" y2="-4.5212" width="0.1524" layer="21"/>
+<wire x1="16.6624" y1="-4.5212" x2="16.6624" y2="4.5212" width="0.1524" layer="21"/>
+<wire x1="16.6624" y1="4.5212" x2="-16.6624" y2="4.5212" width="0.1524" layer="21"/>
+<wire x1="-16.6624" y1="4.5212" x2="-16.6624" y2="-4.5212" width="0.1524" layer="21"/>
+<wire x1="-16.9164" y1="1.27" x2="-17.6784" y2="1.27" width="0.508" layer="21" curve="-180"/>
+<wire x1="-17.6784" y1="1.27" x2="-16.9164" y2="1.27" width="0.508" layer="21" curve="-180"/>
+<text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
+<wire x1="-16.5608" y1="-4.3942" x2="16.5608" y2="-4.3942" width="0.1524" layer="51"/>
+<wire x1="16.5608" y1="-4.3942" x2="16.5608" y2="4.3942" width="0.1524" layer="51"/>
+<wire x1="16.5608" y1="4.3942" x2="-16.5608" y2="4.3942" width="0.1524" layer="51"/>
+<wire x1="-16.5608" y1="4.3942" x2="-16.5608" y2="-4.3942" width="0.1524" layer="51"/>
+<wire x1="-11.049" y1="3.175" x2="-11.811" y2="3.175" width="0.508" layer="51" curve="-180"/>
+<wire x1="-11.811" y1="3.175" x2="-11.049" y2="3.175" width="0.508" layer="51" curve="-180"/>
+<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+</package>
+</packages>
+</library>
+<library name="4-1437565-2">
+<packages>
+<package name="SW_4-1437565-2">
+<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.127" layer="51"/>
+<wire x1="-3" y1="3" x2="3" y2="3" width="0.127" layer="51"/>
+<wire x1="3" y1="3" x2="3" y2="-3" width="0.127" layer="51"/>
+<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="1.75" width="0.127" layer="51"/>
+<circle x="-6.25" y="2.25" radius="0.1" width="0.2" layer="21"/>
+<wire x1="-5.914" y1="-3.25" x2="-5.914" y2="3.25" width="0.05" layer="39"/>
+<wire x1="-5.914" y1="3.25" x2="5.914" y2="3.25" width="0.05" layer="39"/>
+<wire x1="5.914" y1="3.25" x2="5.914" y2="-3.25" width="0.05" layer="39"/>
+<wire x1="5.914" y1="-3.25" x2="-5.914" y2="-3.25" width="0.05" layer="39"/>
+<text x="-5.76668125" y="3.42155" size="0.814015625" layer="25">&gt;NAME</text>
+<text x="-5.79706875" y="-4.215059375" size="0.813640625" layer="27">&gt;VALUE</text>
+<wire x1="-2.99211875" y1="-2.999740625" x2="3.00228125" y2="-2.999740625" width="0.127" layer="21"/>
+<wire x1="3.00228125" y1="-2.999740625" x2="3.00228125" y2="2.9972" width="0.127" layer="21"/>
+<wire x1="3.00228125" y1="2.9972" x2="-2.999740625" y2="2.9972" width="0.127" layer="21"/>
+<wire x1="-2.999740625" y1="2.9972" x2="-2.999740625" y2="-2.9972" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="1.75" width="0.127" layer="21"/>
+<smd name="1" x="-4.55" y="2.275" dx="2.1" dy="1.4" layer="1"/>
+<smd name="2" x="4.55" y="2.275" dx="2.1" dy="1.4" layer="1"/>
+<smd name="3" x="-4.55" y="-2.275" dx="2.1" dy="1.4" layer="1"/>
+<smd name="4" x="4.55" y="-2.275" dx="2.1" dy="1.4" layer="1"/>
+</package>
+</packages>
+</library>
+<library name="ATSAML21J18B-AUT">
+<packages>
+<package name="QFP50P1200X1200X120-64N">
+<wire x1="-5" y1="5" x2="5" y2="5" width="0.127" layer="51"/>
+<wire x1="5" y1="5" x2="5" y2="-5" width="0.127" layer="51"/>
+<wire x1="5" y1="-5" x2="-5" y2="-5" width="0.127" layer="51"/>
+<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.127" layer="51"/>
+<wire x1="-5" y1="4.2" x2="-5" y2="5" width="0.127" layer="21"/>
+<wire x1="-5" y1="5" x2="-4.2" y2="5" width="0.127" layer="21"/>
+<wire x1="-4.2" y1="-5" x2="-5" y2="-5" width="0.127" layer="21"/>
+<wire x1="-5" y1="-5" x2="-5" y2="-4.2" width="0.127" layer="21"/>
+<wire x1="5" y1="-4.2" x2="5" y2="-5" width="0.127" layer="21"/>
+<wire x1="5" y1="-5" x2="4.2" y2="-5" width="0.127" layer="21"/>
+<wire x1="4.2" y1="5" x2="5" y2="5" width="0.127" layer="21"/>
+<wire x1="5" y1="5" x2="5" y2="4.2" width="0.127" layer="21"/>
+<circle x="-4" y="3.8" radius="0.316225" width="0.127" layer="21"/>
+<circle x="-5.95" y="4.4" radius="0.1" width="0.2" layer="21"/>
+<wire x1="-6.75" y1="6.75" x2="6.75" y2="6.75" width="0.05" layer="39"/>
+<wire x1="6.75" y1="6.75" x2="6.75" y2="-6.75" width="0.05" layer="39"/>
+<wire x1="6.75" y1="-6.75" x2="-6.75" y2="-6.75" width="0.05" layer="39"/>
+<wire x1="-6.75" y1="-6.75" x2="-6.75" y2="6.75" width="0.05" layer="39"/>
+<text x="-5.01176875" y="6.76588125" size="1.27298125" layer="25">&gt;NAME</text>
+<text x="-5.016159375" y="-8.025859375" size="1.274109375" layer="27">&gt;VALUE</text>
+<circle x="-4" y="3.8" radius="0.22360625" width="0.127" layer="21"/>
+<circle x="-4" y="3.8" radius="0.1" width="0.127" layer="21"/>
+<circle x="-4" y="3.7" radius="0.1" width="0.127" layer="21"/>
+<smd name="1" x="-5.67" y="3.75" dx="1.47" dy="0.28" layer="1" roundness="70"/>
+<smd name="2" x="-5.67" y="3.25" dx="1.47" dy="0.28" layer="1" roundness="70"/>
+<smd name="3" x="-5.67" y="2.75" dx="1.47" dy="0.28" layer="1" roundness="70"/>
+<smd name="4" x="-5.67" y="2.25" dx="1.47" dy="0.28" layer="1" roundness="70"/>
+<smd name="5" x="-5.67" y="1.75" dx="1.47" dy="0.28" layer="1" roundness="70"/>
+<smd name="6" x="-5.67" y="1.25" dx="1.47" dy="0.28" layer="1" roundness="70"/>
+<smd name="7" x="-5.67" y="0.75" dx="1.47" dy="0.28" layer="1" roundness="70"/>
+<smd name="8" x="-5.67" y="0.25" dx="1.47" dy="0.28" layer="1" roundness="70"/>
+<smd name="9" x="-5.67" y="-0.25" dx="1.47" dy="0.28" layer="1" roundness="70"/>
+<smd name="10" x="-5.67" y="-0.75" dx="1.47" dy="0.28" layer="1" roundness="70"/>
+<smd name="11" x="-5.67" y="-1.25" dx="1.47" dy="0.28" layer="1" roundness="70"/>
+<smd name="12" x="-5.67" y="-1.75" dx="1.47" dy="0.28" layer="1" roundness="70"/>
+<smd name="13" x="-5.67" y="-2.25" dx="1.47" dy="0.28" layer="1" roundness="70"/>
+<smd name="14" x="-5.67" y="-2.75" dx="1.47" dy="0.28" layer="1" roundness="70"/>
+<smd name="15" x="-5.67" y="-3.25" dx="1.47" dy="0.28" layer="1" roundness="70"/>
+<smd name="16" x="-5.67" y="-3.75" dx="1.47" dy="0.28" layer="1" roundness="70"/>
+<smd name="17" x="-3.75" y="-5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R90"/>
+<smd name="18" x="-3.25" y="-5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R90"/>
+<smd name="19" x="-2.75" y="-5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R90"/>
+<smd name="20" x="-2.25" y="-5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R90"/>
+<smd name="21" x="-1.75" y="-5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R90"/>
+<smd name="22" x="-1.25" y="-5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R90"/>
+<smd name="23" x="-0.75" y="-5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R90"/>
+<smd name="24" x="-0.25" y="-5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R90"/>
+<smd name="25" x="0.25" y="-5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R90"/>
+<smd name="26" x="0.75" y="-5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R90"/>
+<smd name="27" x="1.25" y="-5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R90"/>
+<smd name="28" x="1.75" y="-5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R90"/>
+<smd name="29" x="2.25" y="-5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R90"/>
+<smd name="30" x="2.75" y="-5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R90"/>
+<smd name="31" x="3.25" y="-5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R90"/>
+<smd name="32" x="3.75" y="-5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R90"/>
+<smd name="33" x="5.67" y="-3.75" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R180"/>
+<smd name="34" x="5.67" y="-3.25" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R180"/>
+<smd name="35" x="5.67" y="-2.75" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R180"/>
+<smd name="36" x="5.67" y="-2.25" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R180"/>
+<smd name="37" x="5.67" y="-1.75" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R180"/>
+<smd name="38" x="5.67" y="-1.25" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R180"/>
+<smd name="39" x="5.67" y="-0.75" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R180"/>
+<smd name="40" x="5.67" y="-0.25" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R180"/>
+<smd name="41" x="5.67" y="0.25" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R180"/>
+<smd name="42" x="5.67" y="0.75" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R180"/>
+<smd name="43" x="5.67" y="1.25" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R180"/>
+<smd name="44" x="5.67" y="1.75" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R180"/>
+<smd name="45" x="5.67" y="2.25" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R180"/>
+<smd name="46" x="5.67" y="2.75" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R180"/>
+<smd name="47" x="5.67" y="3.25" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R180"/>
+<smd name="48" x="5.67" y="3.75" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R180"/>
+<smd name="49" x="3.75" y="5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R270"/>
+<smd name="50" x="3.25" y="5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R270"/>
+<smd name="51" x="2.75" y="5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R270"/>
+<smd name="52" x="2.25" y="5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R270"/>
+<smd name="53" x="1.75" y="5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R270"/>
+<smd name="54" x="1.25" y="5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R270"/>
+<smd name="55" x="0.75" y="5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R270"/>
+<smd name="56" x="0.25" y="5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R270"/>
+<smd name="57" x="-0.25" y="5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R270"/>
+<smd name="58" x="-0.75" y="5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R270"/>
+<smd name="59" x="-1.25" y="5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R270"/>
+<smd name="60" x="-1.75" y="5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R270"/>
+<smd name="61" x="-2.25" y="5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R270"/>
+<smd name="62" x="-2.75" y="5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R270"/>
+<smd name="63" x="-3.25" y="5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R270"/>
+<smd name="64" x="-3.75" y="5.67" dx="1.47" dy="0.28" layer="1" roundness="70" rot="R270"/>
+</package>
+</packages>
+</library>
+</libraries>
+<attributes>
+</attributes>
+<variantdefs>
+</variantdefs>
+<classes>
+<class number="0" name="default" width="0" drill="0">
+</class>
+</classes>
+<designrules name="default">
+<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+Die Standard-Design-Rules sind so gewählt, dass sie für 
+die meisten Anwendungen passen. Sollte ihre Platine 
+besondere Anforderungen haben, treffen Sie die erforderlichen
+Einstellungen hier und speichern die Design Rules unter 
+einem neuen Namen ab.</description>
+<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+The default Design Rules have been set to cover
+a wide range of applications. Your particular design
+may have different requirements, so please make the
+necessary adjustments and save your customized
+design rules under a new name.</description>
+<param name="layerSetup" value="(1*16)"/>
+<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
+<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="6mil"/>
+<param name="mdWirePad" value="6mil"/>
+<param name="mdWireVia" value="6mil"/>
+<param name="mdPadPad" value="6mil"/>
+<param name="mdPadVia" value="6mil"/>
+<param name="mdViaVia" value="6mil"/>
+<param name="mdSmdPad" value="6mil"/>
+<param name="mdSmdVia" value="6mil"/>
+<param name="mdSmdSmd" value="6mil"/>
+<param name="mdViaViaSameLayer" value="6mil"/>
+<param name="mnLayersViaInSmd" value="2"/>
+<param name="mdCopperDimension" value="40mil"/>
+<param name="mdDrill" value="6mil"/>
+<param name="mdSmdStop" value="0mil"/>
+<param name="msWidth" value="6mil"/>
+<param name="msDrill" value="0.35mm"/>
+<param name="msMicroVia" value="9.99mm"/>
+<param name="msBlindViaRatio" value="0.5"/>
+<param name="rvPadTop" value="0.25"/>
+<param name="rvPadInner" value="0.25"/>
+<param name="rvPadBottom" value="0.25"/>
+<param name="rvViaOuter" value="0.25"/>
+<param name="rvViaInner" value="0.25"/>
+<param name="rvMicroViaOuter" value="0.25"/>
+<param name="rvMicroViaInner" value="0.25"/>
+<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMaxPadTop" value="20mil"/>
+<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMaxPadInner" value="20mil"/>
+<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMaxPadBottom" value="20mil"/>
+<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMaxViaOuter" value="20mil"/>
+<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMaxViaInner" value="20mil"/>
+<param name="rlMinMicroViaOuter" value="4mil"/>
+<param name="rlMaxMicroViaOuter" value="20mil"/>
+<param name="rlMinMicroViaInner" value="4mil"/>
+<param name="rlMaxMicroViaInner" value="20mil"/>
+<param name="psTop" value="-1"/>
+<param name="psBottom" value="-1"/>
+<param name="psFirst" value="-1"/>
+<param name="psElongationLong" value="100"/>
+<param name="psElongationOffset" value="100"/>
+<param name="mvStopFrame" value="1"/>
+<param name="mvCreamFrame" value="0"/>
+<param name="mlMinStopFrame" value="4mil"/>
+<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinCreamFrame" value="0mil"/>
+<param name="mlMaxCreamFrame" value="0mil"/>
+<param name="mlViaStopLimit" value="0mil"/>
+<param name="srRoundness" value="0"/>
+<param name="srMinRoundness" value="0mil"/>
+<param name="srMaxRoundness" value="0mil"/>
+<param name="slThermalIsolate" value="10mil"/>
+<param name="slThermalsForVias" value="0"/>
+<param name="dpMaxLengthDifference" value="10mm"/>
+<param name="dpGapFactor" value="2.5"/>
+<param name="checkAngle" value="0"/>
+<param name="checkFont" value="1"/>
+<param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
+<param name="useDiameter" value="13"/>
+<param name="maxErrors" value="50"/>
+</designrules>
+<autorouter>
+<pass name="Default">
+<param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
+<param name="tpViaShape" value="round"/>
+<param name="PrefDir.1" value="a"/>
+<param name="PrefDir.2" value="0"/>
+<param name="PrefDir.3" value="0"/>
+<param name="PrefDir.4" value="0"/>
+<param name="PrefDir.5" value="0"/>
+<param name="PrefDir.6" value="0"/>
+<param name="PrefDir.7" value="0"/>
+<param name="PrefDir.8" value="0"/>
+<param name="PrefDir.9" value="0"/>
+<param name="PrefDir.10" value="0"/>
+<param name="PrefDir.11" value="0"/>
+<param name="PrefDir.12" value="0"/>
+<param name="PrefDir.13" value="0"/>
+<param name="PrefDir.14" value="0"/>
+<param name="PrefDir.15" value="0"/>
+<param name="PrefDir.16" value="a"/>
+<param name="cfVia" value="8"/>
+<param name="cfNonPref" value="5"/>
+<param name="cfChangeDir" value="2"/>
+<param name="cfOrthStep" value="2"/>
+<param name="cfDiagStep" value="3"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="1"/>
+<param name="cfMalusStep" value="1"/>
+<param name="cfPadImpact" value="4"/>
+<param name="cfSmdImpact" value="4"/>
+<param name="cfBusImpact" value="0"/>
+<param name="cfHugging" value="3"/>
+<param name="cfAvoid" value="4"/>
+<param name="cfPolygon" value="10"/>
+<param name="cfBase.1" value="0"/>
+<param name="cfBase.2" value="1"/>
+<param name="cfBase.3" value="1"/>
+<param name="cfBase.4" value="1"/>
+<param name="cfBase.5" value="1"/>
+<param name="cfBase.6" value="1"/>
+<param name="cfBase.7" value="1"/>
+<param name="cfBase.8" value="1"/>
+<param name="cfBase.9" value="1"/>
+<param name="cfBase.10" value="1"/>
+<param name="cfBase.11" value="1"/>
+<param name="cfBase.12" value="1"/>
+<param name="cfBase.13" value="1"/>
+<param name="cfBase.14" value="1"/>
+<param name="cfBase.15" value="1"/>
+<param name="cfBase.16" value="0"/>
+<param name="mnVias" value="20"/>
+<param name="mnSegments" value="9999"/>
+<param name="mnExtdSteps" value="9999"/>
+<param name="mnRipupLevel" value="10"/>
+<param name="mnRipupSteps" value="100"/>
+<param name="mnRipupTotal" value="100"/>
+</pass>
+<pass name="Follow-me" refer="Default" active="yes">
+</pass>
+<pass name="Busses" refer="Default" active="yes">
+<param name="cfNonPref" value="4"/>
+<param name="cfBusImpact" value="4"/>
+<param name="cfHugging" value="0"/>
+<param name="mnVias" value="0"/>
+</pass>
+<pass name="Route" refer="Default" active="yes">
+</pass>
+<pass name="Optimize1" refer="Default" active="yes">
+<param name="cfVia" value="99"/>
+<param name="cfExtdStep" value="10"/>
+<param name="cfHugging" value="1"/>
+<param name="mnExtdSteps" value="1"/>
+<param name="mnRipupLevel" value="0"/>
+</pass>
+<pass name="Optimize2" refer="Optimize1" active="yes">
+<param name="cfNonPref" value="0"/>
+<param name="cfChangeDir" value="6"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="2"/>
+<param name="cfMalusStep" value="2"/>
+<param name="cfPadImpact" value="2"/>
+<param name="cfSmdImpact" value="2"/>
+<param name="cfHugging" value="0"/>
+</pass>
+<pass name="Optimize3" refer="Optimize2" active="yes">
+<param name="cfChangeDir" value="8"/>
+<param name="cfPadImpact" value="0"/>
+<param name="cfSmdImpact" value="0"/>
+</pass>
+<pass name="Optimize4" refer="Optimize3" active="yes">
+<param name="cfChangeDir" value="25"/>
+</pass>
+</autorouter>
+<elements>
+<element name="D1" library="SML-D12U1WT86" package="LED_SML-D12Y1WT86" value="SML-D12U1WT86" x="85.09" y="81.28" smashed="yes" rot="R90">
+<attribute name="DESCRIPTION" value=" Red 620nm LED Indication - Discrete 2.2V 0603 _1608 Metric_ " x="146.05" y="127" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="SML-D12U1WT86CT-ND" x="146.05" y="127" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/rohm-semiconductor/SML-D12U1WT86/SML-D12U1WT86CT-ND/5843858?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="146.05" y="127" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="Rohm" x="146.05" y="127" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MP" value="SML-D12U1WT86" x="146.05" y="127" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="84.09" y="78.78" size="1.016" layer="25" rot="R90"/>
+<attribute name="PACKAGE" value="0603 Rohm" x="146.05" y="127" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="87.09" y="78.78" size="1.016" layer="27" rot="R90"/>
+</element>
+<element name="J2" library="ESE 323 Custom Library" package="CONN_00010C4LF_AMP" value="20021121-00010C4LF" x="92.71" y="80.01" smashed="yes" rot="R270">
+<attribute name="BUILT_BY" value="EMA_Matt" x="29.21" y="49.53" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="COPYRIGHT" value="Copyright (C) 2018 Accelerated Designs. All rights reserved" x="29.21" y="49.53" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="20021121-00010C4LF" x="29.21" y="49.53" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="92.075" y="83.2866" size="1.27" layer="25" ratio="6" rot="SR0"/>
+<attribute name="SOURCELIBRARY" value="Amphenol_2019-10-30" x="29.21" y="49.53" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="92.075" y="85.5472" size="1.27" layer="21" ratio="6" rot="SR0"/>
+<attribute name="VENDOR" value="Amphenol" x="29.21" y="49.53" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="J3" library="ESE 323 Custom Library" package="CONN_SBH11-NBPC-D10-SM-BK" value="SBH11-NBPC-D10-SM-BK" x="110.49" y="49.53" smashed="yes" rot="R270">
+<attribute name="BUILT_BY" value="EMA_Cory" x="57.15" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="COPYRIGHT" value="Copyright (C) 2018 Accelerated Designs. All rights reserved" x="57.15" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="SBH11-NBPC-D10-SM-BK" x="57.15" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="109.855" y="52.8066" size="1.27" layer="25" ratio="6" rot="SR270"/>
+<attribute name="VALUE" x="109.855" y="51.2572" size="1.27" layer="21" ratio="6" rot="SR270"/>
+<attribute name="VENDOR" value="Sullins" x="57.15" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="SW1" library="4-1437565-2" package="SW_4-1437565-2" value="4-1437565-2" x="57.15" y="86.36" smashed="yes">
+<attribute name="COMMENT" value="4-1437565-2" x="97.79" y="81.28" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" Switch Tactile OFF _ON_ SPST Round Button Gull Wing 0.05A 24VDC 1VA 9.18N SMD T/R " x="97.79" y="81.28" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="450-1759-1-ND" x="97.79" y="81.28" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/te-connectivity-alcoswitch-switches/FSM4JSMATR/450-1759-1-ND/2271638?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="97.79" y="81.28" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="TE Connectivity" x="97.79" y="81.28" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="FSM4JSMATR" x="97.79" y="81.28" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="51.38331875" y="89.78155" size="0.814015625" layer="25"/>
+<attribute name="PACKAGE" value="None" x="97.79" y="81.28" size="1.778" layer="27" display="off"/>
+<attribute name="TE_PURCHASE_URL" value="https://www.te.com/usa-en/product-4-1437565-2.html?te_bu=Cor&amp;te_type=disp&amp;te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&amp;elqCampaignId=32493" x="97.79" y="81.28" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="51.35293125" y="82.144940625" size="0.813640625" layer="27"/>
+</element>
+<element name="SW10" library="4-1437565-2" package="SW_4-1437565-2" value="4-1437565-2" x="57.15" y="26.67" smashed="yes">
+<attribute name="COMMENT" value="4-1437565-2" x="88.9" y="-16.51" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" Switch Tactile OFF _ON_ SPST Round Button Gull Wing 0.05A 24VDC 1VA 9.18N SMD T/R " x="88.9" y="-16.51" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="450-1759-1-ND" x="88.9" y="-16.51" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/te-connectivity-alcoswitch-switches/FSM4JSMATR/450-1759-1-ND/2271638?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="88.9" y="-16.51" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="TE Connectivity" x="88.9" y="-16.51" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="FSM4JSMATR" x="88.9" y="-16.51" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="51.38331875" y="30.09155" size="0.814015625" layer="25"/>
+<attribute name="PACKAGE" value="None" x="88.9" y="-16.51" size="1.778" layer="27" display="off"/>
+<attribute name="TE_PURCHASE_URL" value="https://www.te.com/usa-en/product-4-1437565-2.html?te_bu=Cor&amp;te_type=disp&amp;te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&amp;elqCampaignId=32493" x="88.9" y="-16.51" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="51.35293125" y="22.454940625" size="0.813640625" layer="27"/>
+</element>
+<element name="SW2" library="4-1437565-2" package="SW_4-1437565-2" value="4-1437565-2" x="64.77" y="77.47" smashed="yes">
+<attribute name="COMMENT" value="4-1437565-2" x="118.11" y="72.39" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" Switch Tactile OFF _ON_ SPST Round Button Gull Wing 0.05A 24VDC 1VA 9.18N SMD T/R " x="118.11" y="72.39" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="450-1759-1-ND" x="118.11" y="72.39" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/te-connectivity-alcoswitch-switches/FSM4JSMATR/450-1759-1-ND/2271638?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="118.11" y="72.39" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="TE Connectivity" x="118.11" y="72.39" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="FSM4JSMATR" x="118.11" y="72.39" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="59.00331875" y="80.89155" size="0.814015625" layer="25"/>
+<attribute name="PACKAGE" value="None" x="118.11" y="72.39" size="1.778" layer="27" display="off"/>
+<attribute name="TE_PURCHASE_URL" value="https://www.te.com/usa-en/product-4-1437565-2.html?te_bu=Cor&amp;te_type=disp&amp;te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&amp;elqCampaignId=32493" x="118.11" y="72.39" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="58.97293125" y="73.254940625" size="0.813640625" layer="27"/>
+</element>
+<element name="SW3" library="4-1437565-2" package="SW_4-1437565-2" value="4-1437565-2" x="49.53" y="77.47" smashed="yes">
+<attribute name="COMMENT" value="4-1437565-2" x="68.58" y="54.61" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" Switch Tactile OFF _ON_ SPST Round Button Gull Wing 0.05A 24VDC 1VA 9.18N SMD T/R " x="68.58" y="54.61" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="450-1759-1-ND" x="68.58" y="54.61" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/te-connectivity-alcoswitch-switches/FSM4JSMATR/450-1759-1-ND/2271638?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="68.58" y="54.61" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="TE Connectivity" x="68.58" y="54.61" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="FSM4JSMATR" x="68.58" y="54.61" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="43.76331875" y="80.89155" size="0.814015625" layer="25"/>
+<attribute name="PACKAGE" value="None" x="68.58" y="54.61" size="1.778" layer="27" display="off"/>
+<attribute name="TE_PURCHASE_URL" value="https://www.te.com/usa-en/product-4-1437565-2.html?te_bu=Cor&amp;te_type=disp&amp;te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&amp;elqCampaignId=32493" x="68.58" y="54.61" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="43.73293125" y="73.254940625" size="0.813640625" layer="27"/>
+</element>
+<element name="SW4" library="4-1437565-2" package="SW_4-1437565-2" value="4-1437565-2" x="57.15" y="68.58" smashed="yes">
+<attribute name="COMMENT" value="4-1437565-2" x="88.9" y="45.72" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" Switch Tactile OFF _ON_ SPST Round Button Gull Wing 0.05A 24VDC 1VA 9.18N SMD T/R " x="88.9" y="45.72" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="450-1759-1-ND" x="88.9" y="45.72" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/te-connectivity-alcoswitch-switches/FSM4JSMATR/450-1759-1-ND/2271638?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="88.9" y="45.72" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="TE Connectivity" x="88.9" y="45.72" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="FSM4JSMATR" x="88.9" y="45.72" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="51.38331875" y="72.00155" size="0.814015625" layer="25"/>
+<attribute name="PACKAGE" value="None" x="88.9" y="45.72" size="1.778" layer="27" display="off"/>
+<attribute name="TE_PURCHASE_URL" value="https://www.te.com/usa-en/product-4-1437565-2.html?te_bu=Cor&amp;te_type=disp&amp;te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&amp;elqCampaignId=32493" x="88.9" y="45.72" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="51.35293125" y="64.364940625" size="0.813640625" layer="27"/>
+</element>
+<element name="SW5" library="4-1437565-2" package="SW_4-1437565-2" value="4-1437565-2" x="25.4" y="62.23" smashed="yes">
+<attribute name="COMMENT" value="4-1437565-2" x="69.85" y="39.37" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" Switch Tactile OFF _ON_ SPST Round Button Gull Wing 0.05A 24VDC 1VA 9.18N SMD T/R " x="69.85" y="39.37" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="450-1759-1-ND" x="69.85" y="39.37" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/te-connectivity-alcoswitch-switches/FSM4JSMATR/450-1759-1-ND/2271638?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="69.85" y="39.37" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="TE Connectivity" x="69.85" y="39.37" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="FSM4JSMATR" x="69.85" y="39.37" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="19.63331875" y="65.65155" size="0.814015625" layer="25"/>
+<attribute name="PACKAGE" value="None" x="69.85" y="39.37" size="1.778" layer="27" display="off"/>
+<attribute name="TE_PURCHASE_URL" value="https://www.te.com/usa-en/product-4-1437565-2.html?te_bu=Cor&amp;te_type=disp&amp;te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&amp;elqCampaignId=32493" x="69.85" y="39.37" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="19.60293125" y="58.014940625" size="0.813640625" layer="27"/>
+</element>
+<element name="SW6" library="4-1437565-2" package="SW_4-1437565-2" value="4-1437565-2" x="25.4" y="53.34" smashed="yes" rot="R180">
+<attribute name="COMMENT" value="4-1437565-2" x="6.35" y="86.36" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value=" Switch Tactile OFF _ON_ SPST Round Button Gull Wing 0.05A 24VDC 1VA 9.18N SMD T/R " x="6.35" y="86.36" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="450-1759-1-ND" x="6.35" y="86.36" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/te-connectivity-alcoswitch-switches/FSM4JSMATR/450-1759-1-ND/2271638?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="6.35" y="86.36" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="TE Connectivity" x="6.35" y="86.36" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MP" value="FSM4JSMATR" x="6.35" y="86.36" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="31.16668125" y="49.91845" size="0.814015625" layer="25" rot="R180"/>
+<attribute name="PACKAGE" value="None" x="6.35" y="86.36" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TE_PURCHASE_URL" value="https://www.te.com/usa-en/product-4-1437565-2.html?te_bu=Cor&amp;te_type=disp&amp;te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&amp;elqCampaignId=32493" x="6.35" y="86.36" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="31.19706875" y="57.555059375" size="0.813640625" layer="27" rot="R180"/>
+</element>
+<element name="SW7" library="4-1437565-2" package="SW_4-1437565-2" value="4-1437565-2" x="57.15" y="44.45" smashed="yes" rot="R180">
+<attribute name="COMMENT" value="4-1437565-2" x="25.4" y="77.47" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value=" Switch Tactile OFF _ON_ SPST Round Button Gull Wing 0.05A 24VDC 1VA 9.18N SMD T/R " x="25.4" y="77.47" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="450-1759-1-ND" x="25.4" y="77.47" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/te-connectivity-alcoswitch-switches/FSM4JSMATR/450-1759-1-ND/2271638?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="25.4" y="77.47" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="TE Connectivity" x="25.4" y="77.47" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MP" value="FSM4JSMATR" x="25.4" y="77.47" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="62.91668125" y="41.02845" size="0.814015625" layer="25" rot="R180"/>
+<attribute name="PACKAGE" value="None" x="25.4" y="77.47" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TE_PURCHASE_URL" value="https://www.te.com/usa-en/product-4-1437565-2.html?te_bu=Cor&amp;te_type=disp&amp;te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&amp;elqCampaignId=32493" x="25.4" y="77.47" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="62.94706875" y="48.665059375" size="0.813640625" layer="27" rot="R180"/>
+</element>
+<element name="SW8" library="4-1437565-2" package="SW_4-1437565-2" value="4-1437565-2" x="49.53" y="35.56" smashed="yes" rot="R180">
+<attribute name="COMMENT" value="4-1437565-2" x="5.08" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value=" Switch Tactile OFF _ON_ SPST Round Button Gull Wing 0.05A 24VDC 1VA 9.18N SMD T/R " x="5.08" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="450-1759-1-ND" x="5.08" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/te-connectivity-alcoswitch-switches/FSM4JSMATR/450-1759-1-ND/2271638?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="5.08" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="TE Connectivity" x="5.08" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MP" value="FSM4JSMATR" x="5.08" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="55.29668125" y="32.13845" size="0.814015625" layer="25" rot="R180"/>
+<attribute name="PACKAGE" value="None" x="5.08" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TE_PURCHASE_URL" value="https://www.te.com/usa-en/product-4-1437565-2.html?te_bu=Cor&amp;te_type=disp&amp;te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&amp;elqCampaignId=32493" x="5.08" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="55.32706875" y="39.775059375" size="0.813640625" layer="27" rot="R180"/>
+</element>
+<element name="SW9" library="4-1437565-2" package="SW_4-1437565-2" value="4-1437565-2" x="64.77" y="35.56" smashed="yes" rot="R180">
+<attribute name="COMMENT" value="4-1437565-2" x="45.72" y="78.74" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value=" Switch Tactile OFF _ON_ SPST Round Button Gull Wing 0.05A 24VDC 1VA 9.18N SMD T/R " x="45.72" y="78.74" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="450-1759-1-ND" x="45.72" y="78.74" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/te-connectivity-alcoswitch-switches/FSM4JSMATR/450-1759-1-ND/2271638?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="45.72" y="78.74" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="TE Connectivity" x="45.72" y="78.74" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MP" value="FSM4JSMATR" x="45.72" y="78.74" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="70.53668125" y="32.13845" size="0.814015625" layer="25" rot="R180"/>
+<attribute name="PACKAGE" value="None" x="45.72" y="78.74" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TE_PURCHASE_URL" value="https://www.te.com/usa-en/product-4-1437565-2.html?te_bu=Cor&amp;te_type=disp&amp;te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&amp;elqCampaignId=32493" x="45.72" y="78.74" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="70.56706875" y="39.775059375" size="0.813640625" layer="27" rot="R180"/>
+</element>
+<element name="U1" library="ATSAML21J18B-AUT" package="QFP50P1200X1200X120-64N" value="ATSAML21J18B-AUT" x="91.44" y="63.5" smashed="yes">
+<attribute name="DESCRIPTION" value=" ARM® Cortex®-M0+ SAM L21J Microcontroller IC 32-Bit 48MHz 256KB _256K x 8_ FLASH 64-TQFP _10x10_ " x="118.11" y="54.61" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="ATSAML21J18B-AUTCT-ND" x="118.11" y="54.61" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/microchip-technology/ATSAML21J18B-AUT/ATSAML21J18B-AUTCT-ND/5702316?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="118.11" y="54.61" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Microchip" x="118.11" y="54.61" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="ATSAML21J18B-AUT" x="118.11" y="54.61" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="86.42823125" y="70.26588125" size="1.27298125" layer="25"/>
+<attribute name="PACKAGE" value="TQFP-64 Microchip" x="118.11" y="54.61" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="86.423840625" y="55.474140625" size="1.274109375" layer="27"/>
+</element>
+</elements>
+<signals>
+<signal name="VDDANA">
+<contactref element="U1" pad="8"/>
+</signal>
+<signal name="VDDIO">
+<contactref element="U1" pad="21"/>
+<contactref element="U1" pad="34"/>
+<contactref element="U1" pad="48"/>
+<contactref element="J3" pad="1"/>
+<contactref element="J3" pad="17"/>
+<contactref element="J3" pad="18"/>
+<wire x1="109.22" y1="40.64" x2="111.76" y2="40.64" width="0.1524" layer="1"/>
+<wire x1="97.11" y1="60.25" x2="95.25" y2="60.25" width="0.1524" layer="1"/>
+<wire x1="95.25" y1="60.25" x2="89.69" y2="60.25" width="0.1524" layer="1"/>
+<wire x1="89.69" y1="60.25" x2="89.69" y2="57.83" width="0.1524" layer="1"/>
+<wire x1="97.11" y1="67.25" x2="95.25" y2="67.25" width="0.1524" layer="1"/>
+<wire x1="95.25" y1="67.25" x2="95.25" y2="60.25" width="0.1524" layer="1"/>
+<wire x1="111.784" y1="67.25" x2="111.76" y2="67.2404" width="0.1524" layer="1"/>
+<wire x1="111.76" y1="60.96" x2="111.76" y2="67.2404" width="0.1524" layer="1"/>
+<wire x1="97.11" y1="67.25" x2="111.784" y2="67.25" width="0.1524" layer="1"/>
+<wire x1="109.22" y1="40.64" x2="101.6" y2="48.26" width="0.1524" layer="1"/>
+<wire x1="101.6" y1="48.26" x2="101.6" y2="58.42" width="0.1524" layer="1"/>
+<wire x1="99.77" y1="60.25" x2="97.11" y2="60.25" width="0.1524" layer="1"/>
+<wire x1="101.6" y1="58.42" x2="99.77" y2="60.25" width="0.1524" layer="1"/>
+</signal>
+<signal name="GNDANA">
+<contactref element="U1" pad="7"/>
+</signal>
+<signal name="VDDCORE">
+<contactref element="U1" pad="53"/>
+</signal>
+<signal name="VSW">
+<contactref element="U1" pad="55"/>
+</signal>
+<signal name="GND">
+<contactref element="U1" pad="22"/>
+<contactref element="U1" pad="33"/>
+<contactref element="U1" pad="47"/>
+<contactref element="U1" pad="54"/>
+<contactref element="SW1" pad="1"/>
+<contactref element="SW1" pad="2"/>
+<contactref element="SW2" pad="1"/>
+<contactref element="SW2" pad="2"/>
+<contactref element="SW3" pad="1"/>
+<contactref element="SW3" pad="2"/>
+<contactref element="SW4" pad="1"/>
+<contactref element="SW4" pad="2"/>
+<contactref element="SW5" pad="1"/>
+<contactref element="SW5" pad="2"/>
+<contactref element="SW6" pad="1"/>
+<contactref element="SW6" pad="2"/>
+<contactref element="D1" pad="A"/>
+<contactref element="J2" pad="2"/>
+<contactref element="J3" pad="19"/>
+<contactref element="J3" pad="20"/>
+<contactref element="J3" pad="2"/>
+<contactref element="SW7" pad="1"/>
+<contactref element="SW7" pad="2"/>
+<contactref element="SW8" pad="1"/>
+<contactref element="SW8" pad="2"/>
+<contactref element="SW9" pad="1"/>
+<contactref element="SW9" pad="2"/>
+<contactref element="SW10" pad="1"/>
+<contactref element="SW10" pad="2"/>
+<polygon width="0.1524" layer="1">
+<vertex x="17.78" y="19.05"/>
+<vertex x="17.78" y="100.33"/>
+<vertex x="119.38" y="100.33"/>
+<vertex x="119.38" y="19.05"/>
+</polygon>
+</signal>
+<signal name="N$1">
+<contactref element="U1" pad="1"/>
+<contactref element="SW1" pad="4"/>
+<contactref element="SW1" pad="3"/>
+<wire x1="85.77" y1="67.25" x2="76.2" y2="67.25" width="0.1524" layer="1"/>
+<wire x1="76.2" y1="84.085" x2="61.7" y2="84.085" width="0.1524" layer="1"/>
+<wire x1="76.2" y1="67.25" x2="76.2" y2="84.085" width="0.1524" layer="1"/>
+<wire x1="52.6" y1="84.085" x2="61.7" y2="84.085" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$2">
+<contactref element="U1" pad="2"/>
+<contactref element="SW2" pad="3"/>
+<contactref element="SW2" pad="4"/>
+<wire x1="85.77" y1="66.75" x2="74.93" y2="66.75" width="0.1524" layer="1"/>
+<wire x1="74.93" y1="75.195" x2="69.32" y2="75.195" width="0.1524" layer="1"/>
+<wire x1="74.93" y1="66.75" x2="74.93" y2="75.195" width="0.1524" layer="1"/>
+<wire x1="60.22" y1="75.195" x2="69.32" y2="75.195" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$3">
+<contactref element="U1" pad="3"/>
+<contactref element="SW3" pad="3"/>
+<contactref element="SW3" pad="4"/>
+<wire x1="85.77" y1="66.25" x2="66.04" y2="66.25" width="0.1524" layer="1"/>
+<wire x1="66.04" y1="66.25" x2="66.04" y2="72.39" width="0.1524" layer="1"/>
+<wire x1="66.04" y1="72.39" x2="57.15" y2="72.39" width="0.1524" layer="1"/>
+<wire x1="57.15" y1="75.195" x2="54.08" y2="75.195" width="0.1524" layer="1"/>
+<wire x1="57.15" y1="72.39" x2="57.15" y2="75.195" width="0.1524" layer="1"/>
+<wire x1="44.98" y1="75.195" x2="54.08" y2="75.195" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$4">
+<contactref element="U1" pad="4"/>
+<contactref element="SW4" pad="3"/>
+<contactref element="SW4" pad="4"/>
+<wire x1="85.77" y1="65.75" x2="61.7" y2="65.75" width="0.1524" layer="1"/>
+<wire x1="61.7" y1="65.75" x2="61.7" y2="66.305" width="0.1524" layer="1"/>
+<wire x1="52.6" y1="66.305" x2="61.7" y2="66.305" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$5">
+<contactref element="U1" pad="13"/>
+<contactref element="SW5" pad="3"/>
+<contactref element="SW5" pad="4"/>
+<wire x1="85.77" y1="61.25" x2="35.56" y2="61.25" width="0.1524" layer="1"/>
+<wire x1="35.56" y1="61.25" x2="35.56" y2="59.69" width="0.1524" layer="1"/>
+<wire x1="35.56" y1="59.69" x2="29.95" y2="59.69" width="0.1524" layer="1"/>
+<wire x1="29.95" y1="59.69" x2="29.95" y2="59.955" width="0.1524" layer="1"/>
+<wire x1="20.85" y1="59.955" x2="29.95" y2="59.955" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$6">
+<contactref element="U1" pad="14"/>
+<contactref element="SW6" pad="3"/>
+<contactref element="SW6" pad="4"/>
+<wire x1="85.77" y1="60.75" x2="39.37" y2="60.75" width="0.1524" layer="1"/>
+<wire x1="39.37" y1="60.75" x2="39.37" y2="55.88" width="0.1524" layer="1"/>
+<wire x1="29.95" y1="55.88" x2="29.95" y2="55.615" width="0.1524" layer="1"/>
+<wire x1="39.37" y1="55.88" x2="29.95" y2="55.88" width="0.1524" layer="1"/>
+<wire x1="20.85" y1="55.615" x2="29.95" y2="55.615" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$7">
+<contactref element="U1" pad="15"/>
+<contactref element="SW7" pad="3"/>
+<contactref element="SW7" pad="4"/>
+<wire x1="61.7" y1="46.725" x2="66.04" y2="46.725" width="0.1524" layer="1"/>
+<wire x1="66.04" y1="60.25" x2="85.77" y2="60.25" width="0.1524" layer="1"/>
+<wire x1="66.04" y1="46.725" x2="66.04" y2="60.25" width="0.1524" layer="1"/>
+<wire x1="52.6" y1="46.725" x2="61.7" y2="46.725" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$8">
+<contactref element="SW8" pad="3"/>
+<contactref element="SW8" pad="4"/>
+<contactref element="U1" pad="20"/>
+<wire x1="54.08" y1="37.835" x2="57.15" y2="37.835" width="0.1524" layer="1"/>
+<wire x1="89.19" y1="39.37" x2="89.19" y2="57.83" width="0.1524" layer="1"/>
+<wire x1="57.15" y1="37.835" x2="57.15" y2="39.37" width="0.1524" layer="1"/>
+<wire x1="57.15" y1="39.37" x2="89.19" y2="39.37" width="0.1524" layer="1"/>
+<wire x1="44.98" y1="37.835" x2="54.08" y2="37.835" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$9">
+<contactref element="SW9" pad="3"/>
+<contactref element="SW9" pad="4"/>
+<contactref element="U1" pad="29"/>
+<wire x1="93.69" y1="57.83" x2="93.69" y2="37.835" width="0.1524" layer="1"/>
+<wire x1="93.69" y1="37.835" x2="69.32" y2="37.835" width="0.1524" layer="1"/>
+<wire x1="60.22" y1="37.835" x2="69.32" y2="37.835" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$10">
+<contactref element="SW10" pad="3"/>
+<contactref element="SW10" pad="4"/>
+<contactref element="U1" pad="30"/>
+<wire x1="94.19" y1="57.83" x2="94.19" y2="24.395" width="0.1524" layer="1"/>
+<wire x1="94.19" y1="24.395" x2="61.7" y2="24.395" width="0.1524" layer="1"/>
+<wire x1="52.6" y1="24.395" x2="61.7" y2="24.395" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$15">
+<contactref element="U1" pad="61"/>
+<contactref element="D1" pad="C"/>
+<wire x1="85.09" y1="80.455" x2="85.09" y2="72.39" width="0.1524" layer="1"/>
+<wire x1="89.19" y1="72.39" x2="89.19" y2="69.17" width="0.1524" layer="1"/>
+<wire x1="85.09" y1="72.39" x2="89.19" y2="72.39" width="0.1524" layer="1"/>
+</signal>
+<signal name="SWDCLK">
+<contactref element="J2" pad="1"/>
+<contactref element="U1" pad="57"/>
+<wire x1="91.19" y1="69.17" x2="90.76" y2="82.55" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="VTG">
+<contactref element="J2" pad="4"/>
+<contactref element="U1" pad="56"/>
+<wire x1="91.69" y1="69.17" x2="94.66" y2="81.28" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SWDIO">
+<contactref element="J2" pad="5"/>
+<contactref element="U1" pad="58"/>
+<wire x1="90.69" y1="69.17" x2="90.69" y2="73.66" width="0.1524" layer="1"/>
+<wire x1="87.63" y1="73.66" x2="87.63" y2="80.01" width="0.1524" layer="1"/>
+<wire x1="87.63" y1="80.01" x2="90.76" y2="80.01" width="0.1524" layer="1"/>
+<wire x1="90.69" y1="73.66" x2="87.63" y2="73.66" width="0.1524" layer="1"/>
+</signal>
+<signal name="RESETBAR">
+<contactref element="J2" pad="6"/>
+<contactref element="U1" pad="52"/>
+<wire x1="93.69" y1="69.17" x2="93.69" y2="73.66" width="0.1524" layer="1"/>
+<wire x1="93.69" y1="73.66" x2="101.6" y2="73.66" width="0.1524" layer="1"/>
+<wire x1="101.6" y1="73.66" x2="101.6" y2="80.01" width="0.1524" layer="1"/>
+<wire x1="101.6" y1="80.01" x2="94.66" y2="80.01" width="0.1524" layer="1"/>
+</signal>
+<signal name="FT_SCK">
+<contactref element="J3" pad="3"/>
+<contactref element="U1" pad="17"/>
+<wire x1="114.3" y1="68.58" x2="114.3" y2="60.96" width="0.1524" layer="1"/>
+<wire x1="114.3" y1="60.96" x2="111.76" y2="58.42" width="0.1524" layer="1"/>
+<via x="114.3" y="68.58" extent="1-16" drill="0.35"/>
+<wire x1="114.3" y1="68.58" x2="91.44" y2="68.58" width="0.1524" layer="16"/>
+<wire x1="91.44" y1="68.58" x2="91.44" y2="63.5" width="0.1524" layer="16"/>
+<via x="91.44" y="63.5" extent="1-16" drill="0.35"/>
+<wire x1="91.44" y1="63.5" x2="87.63" y2="63.5" width="0.1524" layer="1"/>
+<wire x1="87.63" y1="63.5" x2="87.63" y2="57.83" width="0.1524" layer="1"/>
+<wire x1="87.63" y1="57.83" x2="87.69" y2="57.83" width="0.1524" layer="1"/>
+</signal>
+<signal name="FT_MISO/IO1">
+<contactref element="J3" pad="4"/>
+<contactref element="U1" pad="19"/>
+<wire x1="102.87" y1="58.42" x2="109.22" y2="58.42" width="0.1524" layer="1"/>
+<via x="102.87" y="58.42" extent="1-16" drill="0.35"/>
+<wire x1="102.87" y1="58.42" x2="102.87" y2="50.8" width="0.1524" layer="16"/>
+<wire x1="102.87" y1="50.8" x2="86.36" y2="50.8" width="0.1524" layer="16"/>
+<via x="86.36" y="50.8" extent="1-16" drill="0.35"/>
+<wire x1="86.36" y1="50.8" x2="86.36" y2="53.34" width="0.1524" layer="1"/>
+<wire x1="88.69" y1="53.34" x2="88.69" y2="57.83" width="0.1524" layer="1"/>
+<wire x1="86.36" y1="53.34" x2="88.69" y2="53.34" width="0.1524" layer="1"/>
+</signal>
+<signal name="FT_MOSI/IO0">
+<contactref element="J3" pad="5"/>
+<contactref element="U1" pad="16"/>
+<wire x1="116.84" y1="62.23" x2="116.84" y2="60.96" width="0.1524" layer="1"/>
+<wire x1="116.84" y1="60.96" x2="111.76" y2="55.88" width="0.1524" layer="1"/>
+<via x="116.84" y="62.23" extent="1-16" drill="0.35"/>
+<wire x1="116.84" y1="62.23" x2="81.28" y2="62.23" width="0.1524" layer="16"/>
+<wire x1="81.28" y1="62.23" x2="81.28" y2="57.15" width="0.1524" layer="16"/>
+<via x="81.28" y="57.15" extent="1-16" drill="0.35"/>
+<wire x1="85.77" y1="59.75" x2="85.77" y2="59.69" width="0.1524" layer="1"/>
+<wire x1="85.77" y1="59.69" x2="81.28" y2="59.69" width="0.1524" layer="1"/>
+<wire x1="81.28" y1="59.69" x2="81.28" y2="57.15" width="0.1524" layer="1"/>
+</signal>
+<signal name="FT_CS#">
+<contactref element="J3" pad="6"/>
+<contactref element="U1" pad="18"/>
+<wire x1="104.14" y1="55.88" x2="109.22" y2="55.88" width="0.1524" layer="1"/>
+<via x="104.14" y="55.88" extent="1-16" drill="0.35"/>
+<wire x1="104.14" y1="55.88" x2="104.14" y2="49.53" width="0.1524" layer="16"/>
+<wire x1="104.14" y1="49.53" x2="85.09" y2="49.53" width="0.1524" layer="16"/>
+<via x="85.09" y="49.53" extent="1-16" drill="0.35"/>
+<wire x1="85.09" y1="49.53" x2="85.09" y2="54.61" width="0.1524" layer="1"/>
+<wire x1="88.19" y1="54.61" x2="88.19" y2="57.83" width="0.1524" layer="1"/>
+<wire x1="85.09" y1="54.61" x2="88.19" y2="54.61" width="0.1524" layer="1"/>
+</signal>
+<signal name="FT_INT#">
+<contactref element="J3" pad="7"/>
+</signal>
+<signal name="AUDIO_L">
+<contactref element="J3" pad="9"/>
+</signal>
+<signal name="FT_GPIO0/IO2">
+<contactref element="J3" pad="11"/>
+</signal>
+<signal name="FT_GPIO1/IO3">
+<contactref element="J3" pad="12"/>
+</signal>
+<signal name="GPIO2">
+<contactref element="J3" pad="13"/>
+</signal>
+<signal name="GPIO3">
+<contactref element="J3" pad="14"/>
+</signal>
+<signal name="FT_PD#">
+<contactref element="J3" pad="8"/>
+</signal>
+<signal name="N$22">
+<contactref element="J3" pad="10"/>
+</signal>
+<signal name="N$27">
+<contactref element="J3" pad="15"/>
+</signal>
+<signal name="N$28">
+<contactref element="J3" pad="16"/>
+</signal>
+</signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
+</board>
+</drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
+</note>
+</compatibility>
+</eagle>
